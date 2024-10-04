@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Info</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#home" style="color: white; text-decoration: none;">Valorant Info</a>
+            <a href="#home" class="home-icon">🏠</a> <!-- Ícone de Home -->
+        </h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#times">Times</a></li>
+                <li><a href="#atualizacoes">Atualizações</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#desenvolvedor">Desenvolvedor</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <button id="toggle-btn">☰</button> <!-- Botão para mostrar/ocultar a sidebar -->
+            <section id="home" class="active-section">
+                <h2 class="highlight">Bem-vindo ao mundo de Valorant!</h2>
+                <p>Descubra tudo sobre o jogo, atualizações, personagens e muito mais.</p>
+                <p>Este site é uma fonte de informações sobre Valorant, incluindo notícias, detalhes sobre os times, atualizações e muito mais. Fique por dentro do que acontece no cenário competitivo e melhore suas habilidades!</p>
+                <h3 class="highlight">Próxima Atualização</h3>
+                <p>A nova atualização está prevista para o dia 10/10/2024, trazendo novos agentes e mapas.</p>
+                <h3 class="highlight">Campeonatos</h3>
+                <p>O próximo campeonato será realizado no dia 15/10/2024, com grandes equipes participando.</p>
+                <h3 class="highlight">Movimentações no Mercado</h3>
+                <p>Jogadores estão sendo negociados em várias equipes, com grandes expectativas para a próxima temporada.</p>
+                <img src="https://media.giphy.com/media/xT0BKinSEH7C2rI17y/giphy.gif" alt="GIF de Valorant" class="dynamic-gif"> <!-- Exemplo de GIF -->
+            </section>
+
+            <section id="noticias">
+                <h2 class="highlight">Últimas Notícias</h2>
+                <div id="news-container"></div>
+            </section>
+
+            <section id="times">
+                <h2 class="highlight">Times de Valorant</h2>
+                <ul>
+                    <li><a href="#LOUD" class="sub-option">LOUD <img src="C:\Users\SUPORTE-3\Documents\teste\logo_loud.png" alt="Logo LOUD" class="team-logo"></a></li>
+                </ul>
+                <div id="LOUD" class="team-info" style="display: none;">
+                    <h3><img src="C:\Users\SUPORTE-3\Documents\teste\logo_loud.png" alt="Logo LOUD" class="team-logo"> LOUD</h3>
+                    <h4>Jogadores:</h4>
+                    <ul>
+                        <li>PAncadA</li>
+                        <li>Less</li>
+                        <li>Cauanzin</li>
+                        <li>DGzinn</li>
+                        <li>Tuyz</li>
+                    </ul>
+                    <h4>Composição:</h4>
+                    <p>Os jogadores têm se destacado em competições, trazendo uma forte presença para o time.</p>
+                    <h4>História:</h4>
+                    <p>A LOUD é uma organização de esports brasileira que se destacou em Valorant, conquistando diversos campeonatos e se tornando referência no cenário.</p>
+                    <h4>Próximo Jogo:</h4>
+                    <p>LOUD vs. Team X - Data: 05/10/2024 às 19:00.</p>
+                </div>
+            </section>
+
+            <section id="atualizacoes">
+                <h2 class="highlight">Atualizações do Jogo</h2>
+                <p>Fique por dentro das últimas atualizações e patches do Valorant.</p>
+            </section>
+
+            <section id="contato">
+                <h2 class="highlight">Contato</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <section id="desenvolvedor">
+                <h2 class="highlight">Sobre o Desenvolvedor</h2>
+                <p>Nome: Victor Matheus Seifert</p>
+                <p>Data de Nascimento: 21/09/2004</p>
+                <p>Codenome: Mathzss</p>
+                <p>Desenvolvedor deste site.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Valorant Info</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

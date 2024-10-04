@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Você pode trocar por outra fonte dinâmica, se desejar. */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url("https://i0.wp.com/www.multarte.com.br/wp-content/uploads/2019/01/fundo-3d-preta2-1024x576.png?resize=696%2C392&ssl=1") no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f0f0;
+    height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.home-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 1.2em; /* Tamanho menor do ícone */
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #333;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -240px;
+    transition: left 0.3s;
+    z-index: 100;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 80px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: #ff9800;
+    color: #1e1e1e;
+}
+
+main {
+    margin-left: 240px;
+    padding: 20px;
+    width: calc(100% - 240px);
+}
+
+section {
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(34, 34, 34, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #ff5722;
+    border-bottom: 2px solid #ff5722;
+    padding-bottom: 10px;
+}
+
+.highlight {
+    color: #ff5722; /* Cor laranja */
+    text-align: center; /* Centraliza os subtítulos */
+    font-size: 1.6em; /* Tamanho do subtítulo reduzido */
+    margin: 15px 0; /* Margem superior e inferior */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombreamento sutil */
+}
+
+.dynamic-gif {
+    display: block; /* Faz o GIF ocupar toda a linha */
+    margin: 20px auto; /* Centraliza e dá margem inferior */
+    max-width: 100%; /* Faz com que o GIF não ultrapasse a largura do container */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #444;
+    color: #f0f0f0;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff5722;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: #ff9800;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 1000;
+}
+
+#toggle-btn:hover {
+    background: #ff9800;
+}
+
+.sidebar ul li a {
+    padding-left: 30px;
+}
+
+.team-logo {
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.team-info {
+    margin-top: 15px;
+}
